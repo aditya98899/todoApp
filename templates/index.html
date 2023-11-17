@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>Title</title>
+  <title>My Todo List</title>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -10,82 +10,22 @@
   <!-- Bootstrap CSS v5.2.1 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
- <style>
-    div{
-        outline: 1px dashed black;
-        background-color: #f0f0f0ac;
-    }
-    /* .row{
-        color: aqua;
-        background-color: rgb(24, 94, 223);
-        padding: 2rem;
-        margin: 2rem;
-    } */
- </style>
+
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <div class="container">
-            <a class="navbar-brand" href="#">Navbar</a>
-            <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavId">
-                <ul class="navbar-nav me-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#" aria-current="page">Home <span class="visually-hidden">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdownId" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownId">
-                            <a class="dropdown-item" href="#">Action 1</a>
-                            <a class="dropdown-item" href="#">Action 2</a>
-                        </div>
-                    </li>
-                </ul>
-                <form class="d-flex my-2 my-lg-0">
-                    <input class="form-control me-sm-2" type="text" placeholder="Search">
-                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                </form>
-            </div>
-      </div>
-    </nav>
-    
+    <!-- place navbar here -->
   </header>
   <main>
-   <di class="container">
-    <div class="row">
-      <div class="col-3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non repudiandae dignissimos, quisquam aperiam et dolor reiciendis ullam impedit nesciunt at eos iste maxime quis porro. Dolorum iste illum odit deserunt.</div>
-      <div class="col-3">Doloremque et, voluptatum ab corporis recusandae rem aperiam. Obcaecati iste dolorem illo quidem iure velit nisi at dicta expedita placeat aliquid error voluptatibus sequi, optio, autem harum nulla animi? Nulla!</div>
-      <div class="col-3">Iste voluptate eligendi ex recusandae officia obcaecati debitis aut quaerat iure quibusdam dignissimos nam dolor earum perspiciatis id hic deleniti est, adipisci numquam magnam laboriosam unde, cupiditate incidunt ut? Vero?</div>
-      <div class="col-3">Repellendus totam reiciendis ab ex numquam commodi, culpa id omnis facilis libero eum laborum quidem unde non necessitatibus ut? Explicabo quisquam quam, expedita cupiditate aperiam eius voluptatibus in laborum voluptatem!</div>
-      <div class="col-3">Nostrum, sint nam. Nulla distinctio iure nesciunt eum illum. Dolorum dolore, quo eum voluptates quod eligendi delectus unde quia consectetur modi suscipit odit quis rerum consequuntur recusandae! Cupiditate, deserunt maxime.</div>
-      <div class="col-3">Delectus, necessitatibus non veritatis accusamus corporis in distinctio maxime eum dicta fugit amet culpa quibusdam. Eum dolorem cumque nam laborum at delectus? Odit maiores dolor beatae eaque, voluptatibus eum quas!</div>
-      <div class="col-3">Praesentium labore aliquam obcaecati adipisci alias exercitationem atque eligendi dolorem reprehenderit ducimus magnam consequuntur cumque iure animi itaque, nulla repudiandae similique doloribus harum fugiat nam asperiores? Voluptatum consectetur ullam pariatur?</div>
-      <div class="col-3">Voluptate natus explicabo aut impedit accusantium voluptatum animi voluptas, dignissimos cum, corporis mollitia atque veniam est labore et enim aperiam? Velit qui pariatur amet voluptas, fugit suscipit obcaecati recusandae soluta.</div>
-      <div class="col-3">Eaque explicabo deleniti nisi similique libero quia molestiae nulla culpa temporibus, aliquid ducimus non optio esse natus quas beatae amet aspernatur maiores debitis! Iure saepe laudantium omnis debitis quae! In.</div>
-      <div class="col-3">Facere quis non optio? Minima, atque. Itaque sed nam velit esse at rerum, voluptate ipsum modi tempore et delectus, libero odit, ullam consequatur quod architecto harum fugiat voluptatem ratione atque?</div>
-      <div class="col-3">Animi a facere eius non quidem officiis aliquam ut consectetur, quia quisquam sunt! Doloribus nam dignissimos deserunt quos delectus ad libero corporis dolores magni accusantium doloremque eligendi, esse nobis velit!</div>
-      <div class="col-3">Minus tempore, quis, aperiam exercitationem laboriosam ducimus maxime deserunt sunt vitae delectus sit reiciendis. Natus harum voluptatibus eius exercitationem, odio aperiam cupiditate illum molestias atque aliquam cumque minima veniam ut.</div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          {% include 'todo_list.html' %}
+        </div>
+      </div>
     </div>
-    <div class="row">
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempore neque quaerat reprehenderit quasi. Cum, quos numquam, obcaecati repellendus dolor, consequuntur vitae quam modi quia beatae recusandae veniam maxime. Ducimus, error.</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Quas quae obcaecati ipsam vitae, laborum numquam incidunt, fuga, sit dolore accusantium consequatur cumque. Eos, architecto. Ab dignissimos culpa molestias ea vero ad mollitia odit, minima excepturi porro nostrum maxime.</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Dolore nobis architecto saepe, natus voluptatem iusto reprehenderit quidem ducimus eveniet magnam quas sit nulla praesentium dolor nisi autem repellat. Delectus nihil impedit dolorem neque mollitia minima consequuntur velit ut!</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Omnis fuga odit modi aut ipsa unde. Quos cupiditate quibusdam voluptates ullam sit, neque incidunt reprehenderit repellat maiores suscipit placeat, autem eveniet iure nulla deserunt cum ipsam temporibus ab reiciendis?</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Rerum rem, dolore accusantium perferendis dolores explicabo itaque. Magnam magni amet fugit provident quo qui, molestiae quos. Impedit amet libero, necessitatibus unde autem minima debitis obcaecati voluptates placeat repellat minus.</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Blanditiis fugiat, cupiditate in minima debitis, mollitia sapiente vitae recusandae dignissimos natus dolor iure modi consequuntur beatae inventore laudantium! Voluptate similique totam exercitationem velit asperiores eveniet nisi aliquam. Dicta, voluptatem.</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Nobis corporis illo, vero aut at inventore veritatis excepturi hic quasi. Quod, reiciendis fugiat? Maxime nobis quos sunt dolorum laudantium, impedit veritatis ipsa porro molestiae laboriosam aspernatur repudiandae veniam perspiciatis!</div>
-        <div class="col-xs-12 col-sm-6 col-md4 col-lg-2 col-xx1-1">Consectetur ipsum quidem ipsam, dolor inventore repellat quas saepe blanditiis iste beatae adipisci voluptates praesentium sed iure veritatis ipsa maiores? Illum perferendis sit autem odit fugiat corporis tenetur commodi natus.</div>
-    </div>
-</div>
-</main>
+  </main>
   <footer>
     <!-- place footer here -->
   </footer>
