@@ -1,4 +1,4 @@
-<div id="todo-list">
+<div id="todo-list" class="'pt-5">
     <form class="d-flex">
         <div class="col">
             <div class="mb-3">
@@ -10,11 +10,15 @@
     </form>
     <div class="col">
 
-        {% for item in tasks %}
-        <div class="form-check form-check-inline">
-            <input class="form-check-input" type="checkbox" id="{{item.title}}" value="{{item.id}}">
-            <label class="form-check-label" for="{{item.title}}">{{item.title}}</label>
+        {% for item in task_list %}
+        <div class="d-flex justify-content-between">
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="checkbox" id="{{item.title}}" value="{{item.id}}">
+                <label class="form-check-label" for="{{item.title}}">{{item.title}}</label>
+            </div>
+            <button type="button" class="btn btn-outline-danger"><i class= "fa fa-trash"> </i></button>
         </div>
+        <hr>
         {% empty %}
         <div class="alert alert-warning" role="alert">
             Please enter a task
